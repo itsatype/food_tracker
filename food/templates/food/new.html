@@ -1,0 +1,6 @@
+<form action="{% url 'create_food' %}" method="post">
+{% csrf_token %}
+    <input type="text" name="food_item" id="food_item" value="" />
+    <label for="food_item">Food:</label><br />
+<input type="submit" value="EAT" />
+</form>
